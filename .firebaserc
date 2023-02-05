@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "project-system-d3f71": {
+      "hosting": {
+        "firebase-angular-crud": [
+          "project-system-d3f71"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "project-system-d3f71"
+  }
+}

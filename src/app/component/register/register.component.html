@@ -1,0 +1,78 @@
+<!--div class="container-fluid">
+    <div class="row">
+        <div class="d-flex justify-content-center">
+            <div class="card shadow">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-4">
+                            <h4 class="text-dark text-muted">Register</h4>
+                        </div>
+                        <div class="mb-4">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" name ="email" [(ngModel)] ="email">
+                        </div>
+                        <div class="mb-4">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" name="password" [(ngModel)] ="password">
+                        </div>
+                        <button type="button" class="btn btn-info" (click)="register()">Register</button>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="/login" style="text-decoration: none;">Have an account<span class="text-danger">Login</span></a>
+                            </div>
+                           
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <!--Stylesheet-->
+    
+</head>
+
+<body>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  <form>
+    <h3>Register Your Account</h3>
+
+    <!-- <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email"  name ="email" [(ngModel)] ="email" placeholder="Email Address">
+
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" name="password" [(ngModel)] ="password" placeholder="Password"> -->
+
+
+    <div class="form-floating mb-3">
+      <input type="email" name= "email" [(ngModel)] ="email" class="form-control" id="floatingInput" placeholder="Email Address">
+      <label for="floatingInput">Email address</label>
+    </div>
+
+    <div class="form-floating">
+      <input type="password"  name="password" [(ngModel)] ="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    
+    <div class="row mt-3 text-center">
+            <a href="/login" style="text-decoration: none;">Have an Account? Click here </a>
+    </div>
+
+    <button type="button" class="btn btn-info" (click) ="register()" >Sign Up</button>
+    </form>
+</body>
+
+</html>
